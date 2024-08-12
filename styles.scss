@@ -1,0 +1,133 @@
+.context {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 20%;
+
+  background-color: white;
+
+  .col {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    .item {
+      border: 1px solid rgba(0, 0, 0);
+      width: 27px;
+      height: 27px;
+      text-align: center;
+
+      &.blue {
+        background-color: rgb(115, 115, 241);
+      }
+
+      &.red {
+        background-color: #a41623;
+      }
+
+      &.wall {
+        background-color: black;
+      }
+
+      &.must {
+        background-color: violet;
+      }
+
+      &.power {
+        background-color: rgb(238, 238, 149);
+      }
+
+      .red_player {
+        width: 25px;
+        height: 25px;
+        background-color: rgb(204, 77, 94);
+        border: 1px solid red;
+        border-radius: 50%;
+      }
+
+      .blue_player {
+        width: 25px;
+        height: 25px;
+        background-color: rgb(77, 77, 204);
+        border: 1px solid blue;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.inline.board {
+  margin-top: 5%;
+}
+
+.output {
+  left: 2%;
+  display: flex;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+}
+
+button {
+  height: 30px;
+  width: 5%;
+}
+
+.btns {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  top: 18%;
+  left: 25%;
+  width: 100%;
+}
+
+.inline-options {
+  display: flex;
+
+  .options {
+    p {
+      margin: 0;
+    }
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    left: 2%;
+    top: 15%;
+  }
+}
+
+.boxNames {
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  gap: 1%;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration-line: none;
+    color: a41623;
+  }
+
+  a.targeted {
+    text-decoration-line: underline;
+  }
+}
