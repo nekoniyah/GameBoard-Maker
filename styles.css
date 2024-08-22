@@ -1,0 +1,104 @@
+* {
+  font-family: sans-serif;
+}
+
+.context {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 10px;
+}
+.context .col {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.context .col .item {
+  border: 1px solid rgb(0, 0, 0);
+  width: 27px;
+  height: 27px;
+  text-align: center;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.color_picker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.color_picker p {
+  text-align: center;
+}
+
+input[type=number] {
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  text-align: center;
+  width: 100px;
+}
+
+button,
+input {
+  width: 80px;
+  outline: 0;
+  border: 0;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.inline {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+}
+
+.output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 1%;
+  margin-top: 1%;
+  top: 10px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px auto;
+  gap: 5px;
+  width: 20%;
+}
+
+.size-box {
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.size-box p {
+  margin: 10px;
+}
+.size-box p input {
+  outline: none;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
