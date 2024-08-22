@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boardmaker-lib@latest/dist/index.min.css"
     ></style>
+    <script src="./lib/dist/index.js"></script>
   </head>
   <body>
     <div class="inline">
@@ -45,7 +46,7 @@
           <p>Pick a color:</p>
           <input type="color" name="color" id="color" />
           <button id="clear">Clear</button>
-          <button id="reset">Reset Box</button>
+          <button id="undo">Undo</button>
           <button id="switch" class="edit-mode">Edit Mode</button>
         </div>
       </div>
@@ -878,7 +879,6 @@
     </div>
   </body>
 
-  <script src="https://cdn.jsdelivr.net/npm/boardmaker-lib@latest/dist/index.min.js"></script>
   <script src="./html2canvas.min.js"></script>
   <script src="./index.js"></script>
 </html>
