@@ -19,4 +19,10 @@ Create HTML checkerboard-like Board Games
 - Convert to image and download it ready to be decorated!
   _Special: white boxes are now transparent on render!_
 
+**Undo**
+
 - Clear the last box you colorized (_doesn't recover the last color at the moment_)
+
+**Clear**
+
+- Clear the entire canvas (_not recoverable_)
