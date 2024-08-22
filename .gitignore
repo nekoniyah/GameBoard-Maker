@@ -1,0 +1,8 @@
+lib/
+node_modules/
+index.ts
+styles.scss
+.vscode/
+styles.css.map
+tsconfig.json
+server.js

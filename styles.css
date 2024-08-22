@@ -1,11 +1,12 @@
+* {
+  font-family: sans-serif;
+}
+
 .context {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: absolute;
   top: 10px;
-  right: 20%;
-  background-color: white;
 }
 .context .col {
   display: flex;
@@ -18,103 +19,86 @@
   height: 27px;
   text-align: center;
 }
-.context .col .item.blue {
-  background-color: rgb(115, 115, 241);
-}
-.context .col .item.red {
-  background-color: #a41623;
-}
-.context .col .item.wall {
-  background-color: black;
-}
-.context .col .item.must {
-  background-color: violet;
-}
-.context .col .item.power {
-  background-color: rgb(238, 238, 149);
-}
-.context .col .item .red_player {
-  width: 25px;
-  height: 25px;
-  background-color: rgb(204, 77, 94);
-  border: 1px solid red;
-  border-radius: 50%;
-}
-.context .col .item .blue_player {
-  width: 25px;
-  height: 25px;
-  background-color: rgb(77, 77, 204);
-  border: 1px solid blue;
-  border-radius: 50%;
-}
 
 body,
 html {
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
 
-.inline.board {
-  margin-top: 5%;
+.color_picker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.color_picker p {
+  text-align: center;
+}
+
+input[type=number] {
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  text-align: center;
+  width: 100px;
+}
+
+button,
+input {
+  width: 80px;
+  outline: 0;
+  border: 0;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.inline {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
 }
 
 .output {
-  left: 2%;
   display: flex;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
+  justify-content: center;
   align-items: center;
-  position: absolute;
   text-align: center;
+  margin-left: 1%;
+  margin-top: 1%;
   top: 10px;
 }
 
-button {
-  height: 30px;
-  width: 5%;
-}
-
 .btns {
-  position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  top: 18%;
-  left: 25%;
-  width: 100%;
-}
-
-.inline-options {
-  display: flex;
-}
-.inline-options .options {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  left: 2%;
-  top: 15%;
-}
-.inline-options .options p {
-  margin: 0;
-}
-
-.boxNames {
-  position: absolute;
-  right: 5%;
-  top: 15%;
-  display: flex;
-  flex-direction: column;
-  margin-inline: auto;
-  gap: 1%;
   justify-content: center;
+  margin: 10px auto;
+  gap: 5px;
+  width: 20%;
+}
+
+.size-box {
+  margin: 10px auto;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.boxNames a {
-  text-decoration-line: none;
-  color: a41623;
+.size-box p {
+  margin: 10px;
 }
-.boxNames a.targeted {
-  text-decoration-line: underline;
+.size-box p input {
+  outline: none;
+  height: 30px;
+  width: 30px;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
