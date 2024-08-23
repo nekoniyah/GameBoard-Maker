@@ -4,5 +4,5 @@ index.ts
 styles.scss
 .vscode/
 styles.css.map
-tsconfig.json
-server.js
+package-lock.json
+bun.lockb

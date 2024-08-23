@@ -1,8 +1,5 @@
 {
-  "devDependencies": {
-    "@types/jquery": "^3.5.30"
-  },
   "dependencies": {
-    "express": "^4.19.2"
+    "reejs": "^0.20.1"
   }
 }
