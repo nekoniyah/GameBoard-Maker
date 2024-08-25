@@ -1,5 +1,14 @@
 {
   "dependencies": {
     "reejs": "^0.20.1"
+  },
+  "name": "gameboard-maker",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }

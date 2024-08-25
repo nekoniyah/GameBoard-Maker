@@ -60,6 +60,7 @@ input {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  width: 80vw;
 }
 
 .settings {
@@ -101,4 +102,20 @@ input {
   height: 30px;
   width: 30px;
   text-align: center;
+}
+
+.last-colors {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 10%;
+}
+.last-colors div.color {
+  width: 27px;
+  height: 27px;
+  border: 1px solid black;
+}
+.last-colors div.color:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
