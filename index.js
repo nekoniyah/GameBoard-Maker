@@ -56,18 +56,20 @@ var heightInp = document.querySelector("#height");
 var widthInp = document.querySelector("#width");
 var cols = document.querySelectorAll(".col");
 var switchBtn = document.querySelector("#switch");
-var clearBtn = document.querySelector("#clear");
 var undoBtn = document.querySelector("#undo");
 var lastColorsDiv = document.querySelector(".last-colors");
 var rowHistory = [];
 lastColorsDiv.innerHTML = "";
 if (localStorage.getItem("colors")) {
   let colors = JSON.parse(window.localStorage.getItem("colors"));
-  colors.forEach((color2) => {
+  colors.forEach((colorx) => {
     let div = document.createElement("div");
     div.classList.add("color");
-    div.style.backgroundColor = color2;
+    div.style.backgroundColor = colorx;
     lastColorsDiv.appendChild(div);
+    div.addEventListener("click", (ev) => {
+      color.value = chroma(ev.target.style.backgroundColor).hex();
+    });
   });
 } else {
   localStorage.setItem("colors", JSON.stringify([]));
@@ -102,11 +104,6 @@ undoBtn.addEventListener("click", (ev) => {
     let recent = rowHistory.shift();
   }
   el.style.backgroundColor = "transparent";
-});
-clearBtn.addEventListener("click", (ev) => {
-  rowHistory = [];
-  game.init();
-  listen();
 });
 heightInp.addEventListener("change", (ev) => {
   game.height = parseInt(ev.target.value);
