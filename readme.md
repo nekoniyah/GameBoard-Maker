@@ -2,7 +2,7 @@
 
 Create HTML checkerboard-like Board Games
 
-[https://nekomancer0.github.io/GameBoard-Maker/](https://nekomancer0.github.io/GameBoard-Maker/)
+[https://nekoniyah.github.io/GameBoard-Maker/](https://nekoniyah.github.io/GameBoard-Maker/)
 
 ## Features
 
